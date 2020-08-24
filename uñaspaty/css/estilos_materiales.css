@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+    font-size:16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* -----HEADER----*/
+
+
+header{
+    background: url('../imagenes/bg.jpg') #F7D6E0;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 180px;
+    height: 180px;
+    border-bottom: 0.5px solid #2f3e46;
+} 
+header .menu{
+    margin: 20px 0;
+    text-align: right;
+}
+header .menu a{
+    margin: 10px 8px;
+    color: #DF9C9C;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+    text-shadow: #999 0.5px 1px 0;
+}
+header .menu a:hover{
+    border-bottom: 1px solid #fff;
+}
+header .contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+header .contenedor-texto h2{
+    color: #DF9C9C;
+    font-weight: 300;
+    margin: 0;
+    -webkit-text-stroke: 0.2px black;
+    font-family: 'Lobster', cursive;
+}
+header .contenedor-texto .nombre{
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* ---- MAIN ---- */
+.main .contenedor{
+    overflow: visible;
+}
+.main .misCitas{
+    text-align: center;
+}
+.main .misCitas .texto{
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 50px auto;
+}
+.main .misCitas .texto .titulo{
+    margin-top: 70px;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #F6A1A1;
+    text-align: center;
+}
+.main .tabla .citas{
+    background: url('../imagenes/citas.jpg') #dbcdf0;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+    margin: auto;
+    height: 420px;
+}
+.main .tabla .citas{
+    width: 85%;
+    margin-bottom: 40px;
+    border: 0.2px solid #999;
+}
+.main .tabla h2{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 34px;
+    margin-bottom: 37px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+/*  --- FORMULARIO --- */
+.main .tabla .formBusqueda input[type="text"],
+.main .tabla .formBusqueda input[type="date"],
+.main .tabla .formBusqueda input[type="number"]{
+    border: 0.5px solid #2f3e46;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+.main .tabla .formBusqueda input[type="date"],
+.main .tabla .formBusqueda input[type="text"],
+.main .tabla .formBusqueda input[type="number"]{
+    width: 20%;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 15px;
+}
+input:focus, textarea:focus{
+    background: #fdfcdc;
+}
+.main .tabla .nombre_producto
+{
+    margin-left: 160px;
+}
+.main .tabla .fecha_elaboracion{
+    margin-left: 170px;
+}
+/* --- FOOTER ---*/
+
+footer .redes{
+    background: #F7D6E0;
+    padding: 40px 0;
+    border-top: solid 1px #f8ad9d;
+    margin-top: 110px;
+}
+footer .redes .contenedor{
+    display: flex;
+    justify-content: center;
+}
+footer .redes .facebook,
+footer .redes .wa{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    display:block;
+    padding-top: 2px;
+    border-radius: 5px;
+    font-size: 35px;
+    margin: 10px 20px;
+}
+footer .redes .wa{
+    background: #25d366;
+}
+footer .redes .facebook{
+    background: #3b5998;
+}
+footer .redes .facebook:hover,
+footer .redes .wa:hover{
+    border: solid 0.5px #6d597a;
+}
+
+/* ---- TABLA ---- */
+.mis-citas {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.mis-citas thead {
+    background-color: #FCD5CE;
+    color: black;
+}
+.mis-citas thead th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;   
+}
+.mis-citas tbody td {
+    background: #FFE5D9;
+    padding: 0.5rem;
+    padding-left: 120px;
+}
+.mis-citas .cita{
+    border-right: 1px solid #000;
+}
+.buttoncito {
+    text-decoration: none;
+    margin: auto;
+    background: #fadde1;
+    color: #14213d;
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 12px;
+    border: 0.3px solid #14213d;
+}
+.buttoncito:hover{
+    background: #ffc4d6;
+}
+/* --- BOTONES --- */
+.boton_one{
+    margin-left: 360px;
+}
+.boton_dos,
+.boton_tres{
+    margin-left: 15px;
+}
+.boton{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    /*margin: auto;*/
+    background: #fadde1;
+    color: #14213d;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px !important;
+    font-size: 13px;
+    border: 0.3px solid #14213d;
+    margin-top: 30px;
+}
+.boton:hover{
+    background: #ffc4d6;
+}
